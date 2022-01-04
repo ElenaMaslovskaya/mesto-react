@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Проект: *Mesto-react*
+### :pushpin: Описание проекта:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Сервис для просмотра и публикации фотографий с возможностью ставить лайки, редактировать профиль и удалять свои фото. Данные берутся с сервера. Есть валидация форм. 
 
-## Available Scripts
+Проект проходил код-ревью. Ссылка на репозиторий находится [здесь](https://github.com/ElenaMaslovskaya/mesto-react)   
+_______
+## :link:Стек
 
-In the project directory, you can run:
+![](https://camo.githubusercontent.com/a4a3261113ba632ba59e6b984ff720f4e73748d902bf4b91b6d51f82cffd53ec/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d48544d4c2d3531353336333f7374796c653d666f722d7468652d6261646765266c6f676f3d48544d4c35)
+![](https://camo.githubusercontent.com/b8b434e9bff3e36df5492ce19b4bf6981d5229e28e1841c8988269676bfe6ba1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4353532d3531353336333f7374796c653d666f722d7468652d6261646765266c6f676f3d43535333266c6f676f436f6c6f723d323836326539)
+![](https://camo.githubusercontent.com/bde8ff6fe2632ae59cd452929ed7c1681051aa4f8e757f977c8bda9c6f906b97/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4a6176615363726970742d3531353336333f7374796c653d666f722d7468652d6261646765266c6f676f3d4a617661536372697074)
+![](https://camo.githubusercontent.com/d41116a4a394554150c59b4cdc11dd80d8bfaa438412817c84d76946380decce/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d52656163742d3531353336333f7374796c653d666f722d7468652d6261646765266c6f676f3d5265616374)
+![](https://camo.githubusercontent.com/296c348a49e67fa8ea7017b8f93538c507dc7bf2313b6d8e7f2a3fcdf3023c6b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769742d3531353336333f7374796c653d666f722d7468652d6261646765266c6f676f3d476974)
+![](https://camo.githubusercontent.com/92704119cd021a8717c9f881669d7768bd10bc936b73b0c540c4b0ff1c5e4f2a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d5765625061636b2d3531353336333f7374796c653d666f722d7468652d6261646765266c6f676f3d5765625061636b)
+![](https://camo.githubusercontent.com/d83978157ee3068c191f866a5f70096ff66b9079c7491002287131b7595cddc4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d5653436f64652d3531353336333f7374796c653d666f722d7468652d6261646765266c6f676f3d76697375616c2d73747564696f2d636f6465266c6f676f436f6c6f723d303037366336)
 
-### `npm start`
+### :link:Технологии:
+* Реакт-хуки
+* Взаимодействие с API
+* Create React App
+* Nested BEM
+* Адаптивная верстка
+* Валидация форм на реакте
+_______
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### :heavy_check_mark:*Установка зависимостей*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+:white_small_square:Установить зависимости проекта
 
-### `npm test`
+     npm i
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:white_small_square:Запуск на http://localhost:3000/
 
-### `npm run build`
+    npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:white_small_square:Сборка проекта
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
