@@ -9,13 +9,13 @@ function Main({ onEditProfile, onEditAvatar, onAddPlace, onCardClick }) {
 
    React.useEffect(() => {
       Promise.all([api.getUserInfo(), api.getInitialCards()])
-         .then((data) => {
+         .then(([user, cards]) => {
             setUserInfo({
-               userName: data[0].name,
-               userDescription: data[0].about,
-               userAvatar: data[0].avatar
+               userName: user.name,
+               userDescription: user.about,
+               userAvatar: user.avatar
             });
-            setCards(data[1]);
+            setCards(cards);
          })
          .catch((err) => {
             console.log(`Ошибка: ${err}`);
@@ -36,11 +36,11 @@ function Main({ onEditProfile, onEditAvatar, onAddPlace, onCardClick }) {
             </div>
             <button type="button" className="profile__add-button" onClick={onAddPlace}></button>
          </section>
-         <section class="elements">
+         <section className="elements">
             {cards.map((card) => {
                return (
                   <Card
-                     key={card.id}
+                     key={card._id}
                      link={card.link}
                      name={card.name}
                      likes={card.likes.length}
