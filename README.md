@@ -36,5 +36,5 @@ _______
 
 :white_small_square:Сборка проекта
 
-    npm build
+    npm run build
 
