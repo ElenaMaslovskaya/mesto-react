@@ -8,11 +8,11 @@ function ImagePopup({ card, onClose }) {
                <button type="button" className="popup__close" onClick={onClose}></button>
                <img className="popup__image"
                   src={card.link} alt={card.name} />
-                  <figcaption className="popup__caption">...</figcaption>
+                  <figcaption className="popup__caption">{card.name}</figcaption>
             </figure>
          </div>
       </section>
    )
-}
+};
 
 export default ImagePopup;
