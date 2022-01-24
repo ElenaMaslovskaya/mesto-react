@@ -2,14 +2,13 @@ import React from "react";
 import PopupWithForm from "./PopupWithForm";
 
 function AddPlacePopup(props) {
-   const { isOpen, onClose, onAddPlace } = props;
    const [title, setTitle] = React.useState('');
    const [link, setLink] = React.useState('');
 
    React.useEffect(() => {
       setTitle('');
       setLink('');
-   }, [isOpen]);
+   }, [props.isOpen]);
 
    function handleChangeTitle(event) {
       setTitle(event.target.value);
@@ -21,7 +20,7 @@ function AddPlacePopup(props) {
 
    function handleSubmit(event) {
       event.preventDefault();
-      onAddPlace({
+      props.onAddPlace({
          name: title,
          link: link
       })
@@ -33,8 +32,8 @@ function AddPlacePopup(props) {
          title="Новое место"
          button="create"
          text="Создать"
-         isOpen={isOpen}
-         onClose={onClose}
+         isOpen={props.isOpen}
+         onClose={props.onClose}
          onSubmit={handleSubmit}
       >
          <input
